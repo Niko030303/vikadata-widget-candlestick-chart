@@ -1,0 +1,17 @@
+{
+  "packageId": "wpknEEkJovrJJ",
+  "spaceId": "spcLnW7XCpLTc",
+  "entry": "./src/index.tsx",
+  "name": {
+    "zh-CN": "K线图预览",
+    "en-US": "KLinePreview"
+  },
+  "icon": "./package_icon.png",
+  "cover": "./cover.png",
+  "authorIcon": "./author_icon.png",
+  "description": {
+    "zh-CN": "点击单元格，预览k线图（目前支持分时、日、月）",
+    "en-US": "Click on cells, preview K-line map (minute, day, month)"
+  },
+  "globalPackageId": "wpk2jJ7qZS0VG"
+}
