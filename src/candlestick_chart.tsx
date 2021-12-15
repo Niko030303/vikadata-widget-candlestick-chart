@@ -1,19 +1,19 @@
 import React from 'react';
 import {useActiveCell, useRecord} from '@vikadata/widget-sdk';
 
-export const KLinePreview: React.FC = () => {
+export const CandlestickChart: React.FC = () => {
     const activeCell = useActiveCell();
     const activeRecord = useRecord(activeCell?.recordId)
-    const sto = activeRecord?.getCellValueString('fldFtjhc7O2qS')
+    const stockCode = activeRecord?.getCellValueString('fldFtjhc7O2qS')
 
     // 获取分时k线图
-    const minLineUrl = `http://image.sinajs.cn/newchart/min/n/${sto}.gif`
+    const minLineUrl = `http://image.sinajs.cn/newchart/min/n/${stockCode}.gif`
 
     // 获取日k线图
-    const dailyLineUrl = `http://image.sinajs.cn/newchart/daily/n/${sto}.gif`
+    const dailyLineUrl = `http://image.sinajs.cn/newchart/daily/n/${stockCode}.gif`
 
     // 获取周k线图
-    const weeklyLineUrl = `http://image.sinajs.cn/newchart/weekly/n/${sto}.gif`
+    const weeklyLineUrl = `http://image.sinajs.cn/newchart/weekly/n/${stockCode}.gif`
 
     return (
         <div>
